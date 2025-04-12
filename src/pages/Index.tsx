@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { useToast } from '@/components/ui/use-toast';
-import { Bot, FileAnalytics } from 'lucide-react';
+import { Bot, FileText } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FileUpload from '@/components/FileUpload';
@@ -87,7 +87,7 @@ const Index: React.FC = () => {
             <div>
               <Card className="p-6 h-full">
                 <h2 className="text-xl font-semibold mb-6 flex items-center">
-                  <FileAnalytics className="mr-2 h-5 w-5 text-teal" />
+                  <FileText className="mr-2 h-5 w-5 text-teal" />
                   Resume & Job Description
                 </h2>
                 
