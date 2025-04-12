@@ -1,73 +1,102 @@
-# Welcome to your Lovable project
 
-## Project info
+# Resume Match AI Coach
 
-**URL**: https://lovable.dev/projects/6b8a33a1-74f2-42b5-ae16-bb5631143a14
+An AI-powered application that analyzes your resume against job descriptions to help you optimize your application success rate.
 
-## How can I edit this code?
+![Resume Match AI Coach](public/preview.png)
 
-There are several ways of editing your application.
+## Overview
 
-**Use Lovable**
+Resume Match AI Coach is a web application that helps job seekers improve their resumes by analyzing them against specific job descriptions. The application uses AI to provide personalized feedback, match keywords, and suggest improvements to increase the chances of getting past Applicant Tracking Systems (ATS).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6b8a33a1-74f2-42b5-ae16-bb5631143a14) and start prompting.
+## Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Resume Upload**: Upload your resume in PDF or DOCX format for analysis
+- **Job Description Input**: Paste the job description you're applying for
+- **AI-Powered Analysis**: Get intelligent feedback on how well your resume matches the job description
+- **Keyword Matching**: See which important keywords from the job description are present or missing in your resume
+- **Improvement Suggestions**: Receive actionable tips to enhance your resume for the specific role
+- **Resume Score**: Get an overall match score to understand how well your resume aligns with the job requirements
 
-**Use your preferred IDE**
+## Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend**: React.js with TypeScript
+- **UI Framework**: Tailwind CSS with shadcn/ui components
+- **State Management**: React Hooks and Context API
+- **File Processing**: React Dropzone for file uploads
+- **AI Integration**: Custom AI analysis service
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Getting Started
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Node.js (v14.0 or later)
+- npm or yarn package manager
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone the repository
+```bash
+git clone <repository-url>
+cd resume-match-ai-coach
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-**Use GitHub Codespaces**
+4. Open your browser and navigate to `http://localhost:5173`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Usage
 
-## What technologies are used for this project?
+1. Upload your resume using the file upload component
+2. Paste the job description you're applying for in the text area
+3. Click "Analyze My Resume" to start the analysis
+4. Review the AI feedback and suggestions to improve your resume
+5. Make changes to your resume based on the recommendations
+6. Repeat the process for different job descriptions to tailor your resume accordingly
 
-This project is built with:
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+resume-match-ai-coach/
+├── public/              # Static files
+├── src/                 # Source code
+│   ├── components/      # React components
+│   │   ├── ui/          # UI components (shadcn/ui)
+│   │   └── ...          # Custom components
+│   ├── services/        # API and service integrations
+│   ├── pages/           # Page components
+│   ├── hooks/           # Custom React hooks
+│   └── lib/             # Utility functions and helpers
+├── index.html           # HTML entry point
+└── ...                  # Configuration files
+```
 
-## How can I deploy this project?
+## Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/6b8a33a1-74f2-42b5-ae16-bb5631143a14) and click on Share -> Publish.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes it is!
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Acknowledgments
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
+- [React Dropzone](https://react-dropzone.js.org/) for file upload functionality
+- [Lucide React](https://lucide.dev/) for the icon set
+
+## Contact
+
+For any questions or feedback, please open an issue on the repository.
