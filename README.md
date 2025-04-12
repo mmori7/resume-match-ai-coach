@@ -2,8 +2,7 @@
 # Resume Match AI Coach
 
 An AI-powered application that analyzes your resume against job descriptions to help you optimize your application success rate.
-
-![Resume Match AI Coach](public/preview.png)
+<img width="1165" alt="Screenshot 2025-04-11 at 7 55 59 PM" src="https://github.com/user-attachments/assets/01c8f50b-cd46-4d21-ba03-30fcfc054808" />
 
 ## Overview
 
